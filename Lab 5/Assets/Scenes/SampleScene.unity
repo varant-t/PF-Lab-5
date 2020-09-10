@@ -322,6 +322,7 @@ GameObject:
   - component: {fileID: 590189128}
   - component: {fileID: 590189127}
   - component: {fileID: 590189126}
+  - component: {fileID: 590189130}
   m_Layer: 0
   m_Name: Enemy4
   m_TagString: Enemy
@@ -371,11 +372,11 @@ MonoBehaviour:
   startWaittime: 1
   WaitTime: 2
   chaseRange: 0
-  enemy1: {fileID: 0}
-  enemy2: {fileID: 0}
-  enemy3: {fileID: 0}
+  enemy1: {fileID: 1731105544}
+  enemy2: {fileID: 1539564530}
+  enemy3: {fileID: 1766065642}
   enemy4: {fileID: 590189124}
-  enemy5: {fileID: 0}
+  enemy5: {fileID: 654626580}
 --- !u!65 &590189127
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -438,6 +439,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 590189124}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &590189130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590189124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 116e312d09fa9184c9dcd68e4a42374d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &654626580
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,6 +464,7 @@ GameObject:
   - component: {fileID: 654626584}
   - component: {fileID: 654626583}
   - component: {fileID: 654626582}
+  - component: {fileID: 654626586}
   m_Layer: 0
   m_Name: Enemy5
   m_TagString: Enemy
@@ -500,10 +514,10 @@ MonoBehaviour:
   startWaittime: 1
   WaitTime: 2
   chaseRange: 0
-  enemy1: {fileID: 0}
-  enemy2: {fileID: 0}
-  enemy3: {fileID: 0}
-  enemy4: {fileID: 0}
+  enemy1: {fileID: 1731105544}
+  enemy2: {fileID: 1539564530}
+  enemy3: {fileID: 1766065642}
+  enemy4: {fileID: 590189124}
   enemy5: {fileID: 654626580}
 --- !u!65 &654626583
 BoxCollider:
@@ -567,6 +581,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 654626580}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &654626586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654626580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 116e312d09fa9184c9dcd68e4a42374d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -945,6 +971,7 @@ GameObject:
   - component: {fileID: 1539564533}
   - component: {fileID: 1539564532}
   - component: {fileID: 1539564531}
+  - component: {fileID: 1539564536}
   m_Layer: 0
   m_Name: Enemy2
   m_TagString: Enemy
@@ -980,11 +1007,11 @@ MonoBehaviour:
   startWaittime: 1
   WaitTime: 2
   chaseRange: 0
-  enemy1: {fileID: 0}
+  enemy1: {fileID: 1731105544}
   enemy2: {fileID: 1539564530}
-  enemy3: {fileID: 0}
-  enemy4: {fileID: 0}
-  enemy5: {fileID: 0}
+  enemy3: {fileID: 1766065642}
+  enemy4: {fileID: 590189124}
+  enemy5: {fileID: 654626580}
 --- !u!65 &1539564532
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1061,6 +1088,18 @@ Transform:
   m_Father: {fileID: 1727760786}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1539564536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539564530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 116e312d09fa9184c9dcd68e4a42374d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1727760785
 GameObject:
   m_ObjectHideFlags: 0
@@ -1109,6 +1148,7 @@ GameObject:
   - component: {fileID: 1731105547}
   - component: {fileID: 1731105546}
   - component: {fileID: 1731105545}
+  - component: {fileID: 1731105550}
   m_Layer: 0
   m_Name: Enemy1
   m_TagString: Enemy
@@ -1158,10 +1198,10 @@ MonoBehaviour:
   WaitTime: 2
   chaseRange: 0
   enemy1: {fileID: 1731105544}
-  enemy2: {fileID: 0}
-  enemy3: {fileID: 0}
-  enemy4: {fileID: 0}
-  enemy5: {fileID: 0}
+  enemy2: {fileID: 1539564530}
+  enemy3: {fileID: 1766065642}
+  enemy4: {fileID: 590189124}
+  enemy5: {fileID: 654626580}
 --- !u!23 &1731105547
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1225,6 +1265,18 @@ Transform:
   m_Father: {fileID: 1727760786}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1731105550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731105544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 116e312d09fa9184c9dcd68e4a42374d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1753751178
 GameObject:
   m_ObjectHideFlags: 0
@@ -1268,6 +1320,7 @@ GameObject:
   - component: {fileID: 1766065646}
   - component: {fileID: 1766065645}
   - component: {fileID: 1766065644}
+  - component: {fileID: 1766065648}
   m_Layer: 0
   m_Name: Enemy3
   m_TagString: Enemy
@@ -1317,11 +1370,11 @@ MonoBehaviour:
   startWaittime: 1
   WaitTime: 2
   chaseRange: 0
-  enemy1: {fileID: 0}
-  enemy2: {fileID: 0}
+  enemy1: {fileID: 1731105544}
+  enemy2: {fileID: 1539564530}
   enemy3: {fileID: 1766065642}
-  enemy4: {fileID: 0}
-  enemy5: {fileID: 0}
+  enemy4: {fileID: 590189124}
+  enemy5: {fileID: 654626580}
 --- !u!65 &1766065645
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1384,6 +1437,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1766065642}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1766065648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766065642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 116e312d09fa9184c9dcd68e4a42374d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1931130250
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,9 +5,11 @@ using UnityEngine;
 public class Subject : MonoBehaviour
 {
     List<Observer> observers = new List<Observer>();
-    public void OnNotify()
+
+    //Send notifications if something has happened
+    public void Notify()
     {
-        for(int i= 0; i < observers.Count; i++)
+        for (int i = 0; i < observers.Count; i++)
         {
             observers[i].OnNotify();
         }
@@ -24,6 +26,5 @@ public class Subject : MonoBehaviour
     {
 
     }
-
-
 }
+

@@ -36,7 +36,17 @@ public class Patrol : MonoBehaviour
         WaitTime = startWaittime;
         randomWp = Random.Range(0, waypoint.Length);
 
-    
+        Enemy chase1 = new Enemy(enemy1);
+        Enemy chase2 = new Enemy(enemy2);
+        Enemy chase3 = new Enemy(enemy3);
+        Enemy chase4 = new Enemy(enemy4);
+        Enemy chase5 = new Enemy(enemy5);
+
+        subject.AddObserver(chase1);
+        subject.AddObserver(chase2);
+        subject.AddObserver(chase3);
+        subject.AddObserver(chase4);
+        subject.AddObserver(chase5);
     }
 
     
@@ -45,6 +55,7 @@ public class Patrol : MonoBehaviour
         if (Vector3.Distance(player.position, gameObject.transform.position) < chaseRange)
         {
             Chase();
+            subject.Notify();
         }
         else if (!isPatrolling)
 
@@ -67,7 +78,7 @@ public class Patrol : MonoBehaviour
 
 
 
-    private void Chase()
+    public void Chase()
     {
         isPatrolling = false;
         transform.position = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);

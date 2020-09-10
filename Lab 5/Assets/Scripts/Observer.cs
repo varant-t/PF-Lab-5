@@ -3,21 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-    public abstract class Observer : MonoBehaviour
+public abstract class Observer
+{
+   
+    public abstract void OnNotify();
+}
+
+public class Enemy : Observer
+{
+
+    //The box gameobject which will do something
+    GameObject enemy;
+   
+
+
+    public Enemy(GameObject enemy) //BoxEvents boxEvent)
     {
-        public abstract void OnNotify();
+        this.enemy = enemy;
+        //this.boxEvent = boxEvent;
     }
 
-    public class Box : Observer
+    //What the box will do if the event fits it (will always fit but you will probably change that on your own)
+    public override void OnNotify()
     {
-        //The box gameobject which will do something
-        GameObject boxObj;
-        
-    
-        //What the box will do if the event fits it (will always fit but you will probably change that on your own)
-        public override void OnNotify()
-        {
-            
-        }
-
+       
     }
+}
+
