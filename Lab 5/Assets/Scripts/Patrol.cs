@@ -18,6 +18,14 @@ public class Patrol : MonoBehaviour
 
     bool isPatrolling = false;
 
+    public GameObject enemy1;
+    public GameObject enemy2;
+    public GameObject enemy3;
+    public GameObject enemy4;
+    public GameObject enemy5;
+
+    Subject subject = new Subject();
+
     void Start()
     {
         if (chaseRange <= 0)
@@ -27,6 +35,8 @@ public class Patrol : MonoBehaviour
 
         WaitTime = startWaittime;
         randomWp = Random.Range(0, waypoint.Length);
+
+    
     }
 
     
@@ -61,8 +71,5 @@ public class Patrol : MonoBehaviour
     {
         isPatrolling = false;
         transform.position = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
-  
     }
-
-
 }
