@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\Observer.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Subject.cs" />
+    <Compile Include="Assets\Scripts\ObjectPool.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

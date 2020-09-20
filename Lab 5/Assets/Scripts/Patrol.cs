@@ -83,4 +83,12 @@ public class Patrol : MonoBehaviour
         isPatrolling = false;
         transform.position = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
     }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }
